@@ -1,11 +1,11 @@
-2018-04-17<br>
+2018-04-19<br>
 
 
 <p>更新内容：</p>
 <p></p>
 <p>1.解决android机资源加载失败的问题，</p>
 
-<a href="https://github.com/alibabahalifa/alibabahalifa.github.io/raw/master/wan/star_v1.0.2.0417.apk">Star_v1.0.2.0417.apk</a><p></p><br>
+<a href="https://github.com/alibabahalifa/alibabahalifa.github.io/raw/master/wan/Star_v1.0.2.0417.apk">Star_v1.0.2.0417.apk</a><p></p><br>
 
 
 2018-04-12
@@ -51,14 +51,35 @@
 
 邓：
 <p\>
-
+<p>FlashLight</p><br>
 <p>demo中的资源均为临时资源，主要为了实现以下几个功能：</p><br>
-<p>1、反应堆基本规则：不完美叠加的部分会被裁剪。</p><br>
-<p>2、小人的爬行和㐀成游戏失败的逻辑。</p><br>
-<p>3、3个对小人㐀成的debuff效果程序实现。</p><br>
-<p>demo中对应板子能产生的debuff</p><br>
-<p>完美放置红色板子：小人被定身一段时间</p><br>
-<p>完美放置绿色板子：小人被击飞</p><br>
+<p>1、实现了陀螺仪基础功能</p><br>
+<p>2、实现了怪物刷新（随机刷新和队列刷新）基础逻辑。</p><br>
+<p>3、实现了怪物寻路逻辑。</p><br>
+<p>4、实现了灯光造成伤害</p><br>
+<p>5、目前怪物均为秒杀、玩家不死。</p><br>
+<a href="https://github.com/alibabahalifa/alibabahalifa.github.io/raw/master/180419/deng/flashlight.apk">Flashlight_v1.0.1.0419.apk</a><p></p><br>
+
+
+<p\>
+<p>FootBall</p><br>
+<p>本版本为第一个版本，主要实现的功能有：</p><br>
+<p>1、拖动摇杆进行蓄力，松开摇杆可以将球向指定方向射出（方向控制还有一定问题）。</p><br>
+<p>2、射门力量的控制。。</p><br>
+<p>3、守门员的AI、AI的难度分级。</p><br>
+<p>4、精彩时刻的慢镜头特写</p><br>
+<p>5、从不同位置进行射门。</p><br>
+<p>PS目前需要等状态重置完毕后，再拖动遥杆，才能蓄力。</p><br>
+<a href="https://github.com/alibabahalifa/alibabahalifa.github.io/raw/master/180419/deng/football2018-4-18.apk">FootBall_v1.0.1.0419.apk</a><p></p><br>
+
+<p>反应堆</p><br>
+<p>demo中的资源均为临时资源，主要为了实现以下几个功能：</p><br>
+<p>1、增加了完美堆叠可获得金币，金币可通过连续完美堆叠获得多倍。</p><br>
+<p>2、增加了回退消耗金币。</p><br>
+<p>3、增加了里程碑层提示。</p><br>
+<p>4. 增加了历史最高记录显示。</p><br>
+<p>5. 调整了一些界面逻辑。</p><br>
+<p>6. 优化了游戏底层代码。</p><br>
 <p>完美放置蓝色板子：小人被减㏿</p><br>
 <p>失败条件：</p><br>
 <p>1、板子完全没有叠加成功</p><br>
