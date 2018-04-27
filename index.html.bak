@@ -1,4 +1,4 @@
-2018-04-19<br>
+2018-04-27<br>
 
 万：
 <p\>
@@ -49,11 +49,13 @@
 
 
 <p\>
-<p>FootBall 1.0.1.0426</p><br>
+<p>FootBall 1.0.1.0427</p><br>
 <p>本版本为第一个版本，主要实现的功能有：</p><br>
-<p>1、新增多个射门位置，包括点球</p><br>
-<p>2.新增人墙</p><br>
-<a href="https://github.com/alibabahalifa/alibabahalifa.github.io/raw/master/180426/deng/unityZq2018-4-26.apk">FootBall_v1.0.1.0426.apk</a><p></p><br>
+<p>1.加入球的运动轨迹</p><br>
+<p>2.加入左摇杆控制射门的方向</p><br>
+<p>3.加入右摇杆控制球的弧线</p><br>
+<p>4.更新力量的表现</p><br>
+<a href="https://github.com/alibabahalifa/alibabahalifa.github.io/raw/master/180427/deng/football(4.27).apk">FootBall_v1.0.1.0427.apk</a><p></p><br>
 
 <p>反应堆 1.0.1.0426</p><br>
 <p>demo中的资源均为临时资源，主要为了实现以下几个功能：</p><br>
