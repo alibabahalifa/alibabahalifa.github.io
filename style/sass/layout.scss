@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:#fff;
+}
+/*高亮粉红*/
+$lightPink:#dd577b;  /*#df003c;*/
+/*高亮蓝色*/
+$lightBlue:#338fcf; /*#268bd2;*/
+
+// 动画
+@-webkit-keyframes fadeInUp{
+    from{
+        opacity: 0;
+        -webkit-transform:translate3d(0,100%,0)
+    }
+    to{
+        opacity: 1;
+        -webkit-transform:none
+    }
+}
+
+/*顶部*/
+#top-bar {
+    height: 180px;
+    background-image: linear-gradient(to left, #fddd59  0%, #f9601a 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    .wrap{
+        width: 1280px;
+        margin: 0 auto;
+        animation-duration:.3s;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-name: fadeInUp;
+    }
+    h2{
+        height: 60px;
+        line-height:60px;
+        font-size: 54px;
+    }
+    h3{
+        height:30px;
+        line-height: 30px;
+    }
+}
+
+/*中间部分*/
+.middle-content{
+	.wrap{
+		width: 1320px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.content-title{
+		line-height: 90px;
+		padding: 0 20px;
+		color:#666;
+		font-size: 54px;
+		margin-top: 20px;
+		animation-duration: .5s;
+		animation-delay: 0s;
+		animation-iteration-count: 1;
+		animation-name: fadeInUp;
+		animation-fill-mode:forwards;
+	}
+	.content-wrap{
+		display: flex;
+		flex-wrap:wrap;
+		padding:0 0 40px 0;
+		.game-item{
+			width: 400px;
+			height: auto;
+			margin: 20px;
+			box-sizing: border-box;
+			color:#666;
+			padding: 20px;
+			border-radius: 8px;
+			border: 2px dotted #666;
+			opacity: 0;
+			.game-title {
+				line-height: 40px;
+				color:#666;
+				font-size: 20px;
+				.game-name{
+					margin-right: 5px;
+				}
+				.version{
+					font-size: 14px;
+				}
+			}
+			.game-dec{
+				font-size: 14px;
+				line-height:30px;
+				height: auto;
+			}
+			.game-update-item{
+				font-size: 14px;
+				line-height: 26px;
+				list-style-position: inside;
+			}
+			.download{
+				float: right;
+				width: 60px;
+				height: 30px;
+				line-height: 30px;
+				font-size: 14px;
+				text-align: center;
+				color: #fff;
+				background: #666;
+				display: block;
+				margin-top: 5px;
+				text-decoration: none;
+				border-radius:20px;
+				transition: background .5s;
+				-webkit-transition: background .5s;	/* Safari 和 Chrome */
+			}
+		}
+	}
+	
+	/*粉色高亮样式*/
+	.pink-style-item{
+		background:#fff5f8;
+		.content-title{
+			color:$lightPink;
+		}
+		.game-item {
+			border: 2px dotted $lightPink;
+			.game-title {
+				color:$lightPink;
+			}
+			.download{
+				background: $lightPink;
+				&:hover{
+					background: #df003c;
+				}
+			}
+		}
+	}
+	/*蓝色高亮样式*/
+	.bule-style-item{
+		background: #eff7ff;
+		.content-title{
+			color:$lightBlue;
+		}
+		.game-item {
+			border: 2px dotted $lightBlue;
+			.game-title {
+				color:$lightBlue;
+			}
+			.download{
+				background: $lightBlue;
+				&:hover{
+					background: #0080d9;
+				}
+			}
+		}
+	}
+
+
+	/*循环动画*/
+	@for $i from 1 through 15{
+		.content-wrap .game-item:nth-child(#{$i}){
+			animation-duration: .5s;
+			animation-delay: (0.2*$i)*1s;
+			animation-iteration-count: 1;
+			animation-name: fadeInUp;
+			animation-fill-mode:forwards;
+		}
+	}
+	/**/
+	.content-wrap .game-item:hover{
+		background: #fff;
+	}
+}
+
+
+
+/*屏幕宽小于1320*/
+@media screen and (max-width: 1320px) {
+    #top-bar{
+        .wrap{
+            width: auto;
+            margin: 0 20px;
+        }
+        h2{
+            font-size: 36px;
+        }
+    }
+    .middle-content{
+        .wrap{
+            width: auto;
+        }
+    }
+    .content-wrap .game-item{
+        width: 100%;
+    }
+}
