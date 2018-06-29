@@ -119,17 +119,17 @@ body {
         background: #dd577b; }
         .middle-content .pink-style-item .game-item .download:hover {
           background: #df003c; }
-  .middle-content .bule-style-item {
+  .middle-content .blue-style-item {
     background: #eff7ff; }
-    .middle-content .bule-style-item .content-title {
+    .middle-content .blue-style-item .content-title {
       color: #338fcf; }
-    .middle-content .bule-style-item .game-item {
+    .middle-content .blue-style-item .game-item {
       border: 2px dotted #338fcf; }
-      .middle-content .bule-style-item .game-item .game-title {
+      .middle-content .blue-style-item .game-item .game-title {
         color: #338fcf; }
-      .middle-content .bule-style-item .game-item .download {
+      .middle-content .blue-style-item .game-item .download {
         background: #338fcf; }
-        .middle-content .bule-style-item .game-item .download:hover {
+        .middle-content .blue-style-item .game-item .download:hover {
           background: #0080d9; }
   .middle-content .content-wrap .game-item:nth-child(1) {
     animation-duration: .5s;
